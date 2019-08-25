@@ -1,0 +1,19 @@
+[
+  {
+    "id": "c7288c09-829d-48b9-aee2-4f744e380587",
+    "name": "Game Atari ET",
+    "value": 100,
+    "cost": 80,
+    "code": "Game-1",
+    "barcode": "501234567890",
+    "available_stock": 1000,
+    "ncm_code": "96140000",
+    "cest_code": "0100300",
+    "net_weight": 10,
+    "gross_weight": 15,
+    "category": {
+      "id": "c7288c09-829d-48b9-aee2-4f744e380587",
+      "name": "Kitchen utensils"
+    }
+  }
+]
