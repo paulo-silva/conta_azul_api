@@ -1,4 +1,6 @@
 require "conta_azul_api/configuration"
+require "conta_azul_api/authentication"
+require "conta_azul_api/request"
 require "conta_azul_api/version"
 
 module ContaAzulApi
@@ -6,6 +8,10 @@ module ContaAzulApi
 
   class << self
     attr_accessor :configuration
+  end
+
+  def self.authentication
+    @authentication ||= Authentication.new
   end
 
   def self.configuration
