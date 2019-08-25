@@ -1,0 +1,1753 @@
+[
+  {
+    "id": "21579900-b3ae-4e59-b2c0-5cac5cff6fbd",
+    "name": "Batom Ester",
+    "value": 39.9,
+    "cost": 25,
+    "code": "BA79",
+    "barcode": "",
+    "available_stock": -5,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "85b6350f-b505-48ae-81e6-cd9704bde051",
+    "name": "Batom Realnude",
+    "value": 39.9,
+    "cost": 25,
+    "code": "BA78",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "e55a8d5a-3020-42bc-9b71-fb283919dc1b",
+    "name": "BATTOM BRIGITTE",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA32",
+    "barcode": "",
+    "available_stock": -7,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "e9c2fe65-50a8-4798-a966-e4c286bdd2bb",
+    "name": "BATTOM BRISA",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA33",
+    "barcode": "",
+    "available_stock": 6,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "28890702-9991-430f-b1b1-894bea3d3505",
+    "name": "BATTOM ERICA",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA39",
+    "barcode": "",
+    "available_stock": 6,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "3342d78d-3d29-4918-9fe4-08c547be01ac",
+    "name": "BATTOM ESTRELA DO MAR",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA35",
+    "barcode": "",
+    "available_stock": 4,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "c7b94798-e473-4d11-ab64-2f70fa28cc65",
+    "name": "BATTOM EVELISE",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA34",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "c588ff95-28fa-46a0-9e67-b0ac1d0476f4",
+    "name": "BATTOM MICHELLE",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA36",
+    "barcode": "",
+    "available_stock": 6,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "75f2ca19-bca9-49f3-bd23-7971eee96bf3",
+    "name": "BATTOM NAYARA",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA38",
+    "barcode": null,
+    "available_stock": 0,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "f0522498-6451-4125-a728-1e8ae03eb7d2",
+    "name": "BATTOM SOLANGE",
+    "value": 29.9,
+    "cost": 17.94,
+    "code": "BA37",
+    "barcode": "",
+    "available_stock": 11,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "ed161edb-cf68-48b9-a904-1a66be203348",
+    "name": "BATTOM SOMBRA AZUL",
+    "value": 25.9,
+    "cost": 16,
+    "code": "BA68",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "60232554-b256-44e3-bde3-81edf480b0ac",
+      "name": "Mercadoria para Revenda"
+    }
+  },
+  {
+    "id": "22059f90-6a0c-40f8-a21d-2362e5978abb",
+    "name": "BATTOM THUNDER",
+    "value": 39.9,
+    "cost": 25,
+    "code": "BA26",
+    "barcode": "",
+    "available_stock": 7,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "a0c66e63-a187-4534-a9fe-ade7a0f1a6ea",
+    "name": "CILIOS POSTICOS 0405",
+    "value": 25.9,
+    "cost": 2.4,
+    "code": "BA80",
+    "barcode": "",
+    "available_stock": -13,
+    "ncm_code": "67049000",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "e0aaee15-118d-464d-8e14-37e832edd17b",
+    "name": "CILIOS POSTICOS 0412",
+    "value": 25.9,
+    "cost": 2.4,
+    "code": "BA81",
+    "barcode": "",
+    "available_stock": -11,
+    "ncm_code": "67049000",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "b15bd5c5-ea0f-41d7-828c-7e4ebfda70a1",
+    "name": "CILIOS POSTIÇOS MISS FRANDY - 0402",
+    "value": 25,
+    "cost": 2.4,
+    "code": "BA59",
+    "barcode": "",
+    "available_stock": 5,
+    "ncm_code": "67049000",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "deabe24e-d9b3-43e1-8840-d1ae3c3ec03c",
+    "name": "CILIOS POSTIÇOS MISS FRANDY - 0404",
+    "value": 25,
+    "cost": 2.4,
+    "code": "BA60",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "67049000",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "32bd2871-e6bb-4944-b0de-e3df18af420f",
+    "name": "CILIOS POSTIÇOS MISS FRANDY - 0407",
+    "value": 25,
+    "cost": 2.4,
+    "code": "BA61",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "67049000",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "08550df0-392b-4569-a327-18238fb92f3b",
+    "name": "CILIOS POSTIÇOS MISS FRANDY - 0408",
+    "value": 25,
+    "cost": 2.4,
+    "code": "BA69",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "67049000",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "500fec65-833b-4b4b-844a-2f5b461e14e6",
+    "name": "CILIOS POSTIÇOS MISS FRANDY - 0410",
+    "value": 25,
+    "cost": 2.4,
+    "code": "BA58",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "67049000",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "672c5dcb-2f38-4779-bd94-66656e6b59c3",
+    "name": "COLA GLITTER EM PASTA",
+    "value": 59.9,
+    "cost": 35.94,
+    "code": "BA31",
+    "barcode": "",
+    "available_stock": 1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "0579f434-857b-4576-aadf-5c68d64689b4",
+    "name": "CONTROL PRIMER/PRIMER FACIAL",
+    "value": 69.9,
+    "cost": 40,
+    "code": "BA62",
+    "barcode": "",
+    "available_stock": 1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "60232554-b256-44e3-bde3-81edf480b0ac",
+      "name": "Mercadoria para Revenda"
+    }
+  },
+  {
+    "id": "b149f5c9-1e5b-4432-a9e9-c4b9cd59aef4",
+    "name": "CORRETIVO BRIGHT",
+    "value": 63,
+    "cost": 35,
+    "code": "BA13",
+    "barcode": "",
+    "available_stock": 21,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "c18bc0bf-a912-48bc-b2e5-7f22b23dbfb0",
+    "name": "CORRETIVO BRONZE",
+    "value": 63,
+    "cost": 35,
+    "code": "BA15",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "b307e9ff-9029-42a1-90ab-71632058df6c",
+    "name": "CORRETIVO DARK",
+    "value": 63,
+    "cost": 35,
+    "code": "BA14",
+    "barcode": "",
+    "available_stock": 8,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "19ee527f-230e-4b9d-b62b-e34573b5120c",
+    "name": "CORRETIVO DEEP",
+    "value": 63,
+    "cost": 35,
+    "code": "BA16",
+    "barcode": "",
+    "available_stock": 12,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "a7b5f5cf-cb9e-4015-a0f7-69af60a04c53",
+    "name": "CORRETIVO LIGHT FLOW",
+    "value": 63,
+    "cost": 35,
+    "code": "BA12",
+    "barcode": "",
+    "available_stock": 12,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "2f246db2-06fd-4e38-9542-d7b296c88a44",
+    "name": "DELINIADOR POWER BLACK",
+    "value": 69.9,
+    "cost": 40,
+    "code": "BA84",
+    "barcode": "",
+    "available_stock": -29,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "61c735e0-92b0-4489-bec5-0837210b08e6",
+    "name": "DILUIDOR",
+    "value": 63,
+    "cost": 35,
+    "code": "BA06",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "a3042ab3-691b-47cb-8af0-2b6f2b5f2990",
+    "name": "ESPONJA",
+    "value": 29.9,
+    "cost": 18,
+    "code": "BA57",
+    "barcode": "",
+    "available_stock": -23,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "8fd1b960-53b2-40b0-8c60-8002d7088055",
+    "name": "EXTREME CARE & REPAIR",
+    "value": 65.9,
+    "cost": 35,
+    "code": "BA64",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "60232554-b256-44e3-bde3-81edf480b0ac",
+      "name": "Mercadoria para Revenda"
+    }
+  },
+  {
+    "id": "ccc8e7db-253f-4ec5-8b58-20497acaf0d8",
+    "name": "FIX BEAUTY",
+    "value": 72,
+    "cost": 40,
+    "code": "BA02",
+    "barcode": "",
+    "available_stock": -11,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "26456233-455d-4b50-bf41-e4a78adeed5c",
+    "name": "FIX BEAUTY BLOSSOM",
+    "value": 78,
+    "cost": 45,
+    "code": "BA03",
+    "barcode": "",
+    "available_stock": 13,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "3568597c-6cad-46e6-bab0-5caa4eb216e7",
+    "name": "FIX BEAUTY DIAMOND",
+    "value": 78,
+    "cost": 45,
+    "code": "BA05",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "1b53b0ba-6158-4513-a912-bcd5fefc065f",
+    "name": "FIX BEAUTY SUNSET",
+    "value": 78,
+    "cost": 45,
+    "code": "BA04",
+    "barcode": "",
+    "available_stock": 6,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "09af1fca-a1eb-471a-b7e3-eb3d2dbe372a",
+    "name": "GLITER 215",
+    "value": 27,
+    "cost": 14.94,
+    "code": "BA40",
+    "barcode": "",
+    "available_stock": 1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "0944cf40-af5c-4caa-b817-5f34c383745b",
+    "name": "GLITER 239",
+    "value": 24.9,
+    "cost": 18,
+    "code": "BA82",
+    "barcode": "",
+    "available_stock": -2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "ca38bbe1-13d4-4d5e-b4a0-7b28c2ede78b",
+    "name": "GLITER 55",
+    "value": 27,
+    "cost": 14.94,
+    "code": "BA42",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "8fd478d4-e73b-419a-a38c-7f50e6e20022",
+    "name": "GLITER 80",
+    "value": 27,
+    "cost": 14.94,
+    "code": "BA41",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "7062e56c-e8f7-4042-9580-e50e67417405",
+    "name": "GLITER AP 22",
+    "value": 27,
+    "cost": 18,
+    "code": "BA20",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "a9931fe4-8d94-471e-9bbc-90ba27620ed3",
+    "name": "GLITER AP34",
+    "value": 27,
+    "cost": 18,
+    "code": "BA25",
+    "barcode": "",
+    "available_stock": -4,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "c15136b0-45f0-4cb5-992e-27b38b4a3211",
+    "name": "GLITER GLUE",
+    "value": 42,
+    "cost": 24,
+    "code": "BA07",
+    "barcode": "",
+    "available_stock": -13,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "6182447b-b5d9-4c02-bc56-8307030759fd",
+    "name": "Glitter AP 163",
+    "value": 27,
+    "cost": 18,
+    "code": "BA19",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "5e2c1c2e-680b-458f-82b0-ce665a64fdbf",
+    "name": "GLITTER APM 166",
+    "value": 27,
+    "cost": 18,
+    "code": "BA22",
+    "barcode": "",
+    "available_stock": 9,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "a65d9e45-bbeb-4a02-8c9a-c7fecf48a0e0",
+    "name": "Glitter APM 18",
+    "value": 27,
+    "cost": 18,
+    "code": "BA77",
+    "barcode": "",
+    "available_stock": 1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "850ab630-3c15-4404-8aa2-eb33619914c4",
+    "name": "GLITTER APM 253",
+    "value": 27,
+    "cost": 18,
+    "code": "BA23",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "684a70b7-57ec-4b58-9b24-ea73fcf492b0",
+    "name": "Glitter APM 28",
+    "value": 24.9,
+    "cost": 18,
+    "code": "BA98",
+    "barcode": "",
+    "available_stock": -3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "c173c3c2-00e4-41f3-9071-cd4348f9f22b",
+    "name": "GLITTER APM 56",
+    "value": 27,
+    "cost": 18,
+    "code": "BA24",
+    "barcode": "",
+    "available_stock": -5,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "1bc3b24a-552c-432c-93a5-71ecc964652d",
+    "name": "GLITTER DOURADO",
+    "value": 27,
+    "cost": 14.94,
+    "code": "BA44",
+    "barcode": "",
+    "available_stock": 4,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "e2964874-0e42-4695-8fb3-b856ba6c83ac",
+    "name": "Glitter Holder",
+    "value": 55.9,
+    "cost": 30,
+    "code": "BA97",
+    "barcode": "",
+    "available_stock": 13,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "0ebf33a9-f077-47bb-bf3d-2255ba2fb262",
+    "name": "GLITTER HOLOGRAFICO 01",
+    "value": 29.9,
+    "cost": 10,
+    "code": "BA91",
+    "barcode": "",
+    "available_stock": -13,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "10818f6d-d796-479f-8565-080df36abbcb",
+    "name": "GLITTER HOLOGRAFICO 02",
+    "value": 29.9,
+    "cost": 10,
+    "code": "BA92",
+    "barcode": "",
+    "available_stock": -2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "8f89181c-d844-436d-9587-e020bb249634",
+    "name": "GLITTER HOLOGRAFICO 03",
+    "value": 29.9,
+    "cost": 10,
+    "code": "BA93",
+    "barcode": "",
+    "available_stock": -14,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "ff1aa35d-3d90-4440-b732-8f00ed1aedcd",
+    "name": "GLITTER HOLOGRAFICO 04",
+    "value": 29.9,
+    "cost": 10,
+    "code": "BA94",
+    "barcode": "",
+    "available_stock": -4,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "75108296-1ad1-4171-aab6-c91bb7e5ec90",
+    "name": "GLITTER HOLOGRAFICO  05",
+    "value": 29.9,
+    "cost": 10,
+    "code": "BA95",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "587eb81c-c1ec-4396-a2f9-0518730e27cb",
+    "name": "GLITTER HOLOGRAFICO 06",
+    "value": 29.9,
+    "cost": 10,
+    "code": "BA96",
+    "barcode": "",
+    "available_stock": 7,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "3f455dd6-8a6e-43af-ae83-20374e06879c",
+    "name": "GLITTER LUZ DE OURO",
+    "value": 27,
+    "cost": 14.94,
+    "code": "BA43",
+    "barcode": "",
+    "available_stock": -4,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "5a64a3b4-8437-46db-8c0d-d29ec8fdc834",
+    "name": "Glitter Pri",
+    "value": 24.9,
+    "cost": 18,
+    "code": "BA101",
+    "barcode": "",
+    "available_stock": 8,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "4780a117-d42a-44e2-9a81-8f8e82264ff7",
+    "name": "Glitter Unicorn Lessa",
+    "value": 24.9,
+    "cost": 18,
+    "code": "BA99",
+    "barcode": "",
+    "available_stock": -4,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "e0786852-7679-4831-acfc-21e56955eb92",
+    "name": "Gloss Luna",
+    "value": 25.9,
+    "cost": 16,
+    "code": "BA103",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33041000",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "7a4bb344-8b8a-4f8d-a0ec-7bcceee72a97",
+    "name": "Gloss Nay",
+    "value": 25.9,
+    "cost": 16,
+    "code": "BA102",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "474dd5ce-d4ba-44e7-a672-a87b10aaef0a",
+    "name": "Gloss Rafs",
+    "value": 25.9,
+    "cost": 16,
+    "code": "BA100",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "933474bf-431a-46e4-a6d8-3c981c817d9a",
+    "name": "ILUMINADOR 01",
+    "value": 52.9,
+    "cost": 29.94,
+    "code": "BA45",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "ddf8407b-43a3-472f-8c85-bca0da0b71ed",
+    "name": "ILUMINADOR BRONZE GLOW",
+    "value": 63,
+    "cost": 35,
+    "code": "BA63",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "60232554-b256-44e3-bde3-81edf480b0ac",
+      "name": "Mercadoria para Revenda"
+    }
+  },
+  {
+    "id": "29da63e7-a9d9-4735-b78a-34fa25d7e976",
+    "name": "ILUMINADOR DARK BRONZE",
+    "value": 63,
+    "cost": 35,
+    "code": "BA17",
+    "barcode": "",
+    "available_stock": 8,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "7f72b3c0-621e-4f49-a13b-2ff815ff6bf5",
+    "name": "ILUMINADOR GOLD SHOCK",
+    "value": 63,
+    "cost": 35,
+    "code": "BA18",
+    "barcode": "",
+    "available_stock": 11,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "335d0126-59b3-43ae-80b1-1902860c3f02",
+    "name": "LAIT HIDRANTE",
+    "value": 63,
+    "cost": 40,
+    "code": "BA01",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "7517d6f8-b865-4ed4-ae02-baabcd6276f8",
+    "name": "PALETA SALSA",
+    "value": 99.9,
+    "cost": 60,
+    "code": "BA83",
+    "barcode": "",
+    "available_stock": -7,
+    "ncm_code": "33041000",
+    "cest_code": "2000900",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "7daec905-d12f-486f-9463-7b106bed6241",
+    "name": "Perfect Cut Milk Chocolate",
+    "value": 39.9,
+    "cost": 24,
+    "code": "BA76",
+    "barcode": "",
+    "available_stock": -27,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "68f63af5-5fdc-4d45-a59b-eabfab6a7482",
+    "name": "Perfect Cut Punk Wine",
+    "value": 39.9,
+    "cost": 24,
+    "code": "BA74",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "33dd6669-1c97-482e-b5d0-bda089494bb8",
+    "name": "Perfect Cut Real White",
+    "value": 39.9,
+    "cost": 24,
+    "code": "BA75",
+    "barcode": "",
+    "available_stock": -15,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "cff78ff3-a3c5-42b2-adaf-0711fa4c140c",
+    "name": "PIGMENTO 232",
+    "value": 27,
+    "cost": 18,
+    "code": "BA27",
+    "barcode": "",
+    "available_stock": 21,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "f0b0cae5-ff33-4873-b432-969819a123e4",
+    "name": "PINCEL ANA PAULA 01",
+    "value": 39.9,
+    "cost": 20,
+    "code": "BA86",
+    "barcode": "",
+    "available_stock": -3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "5234b973-560a-4a10-8ac6-bf1cff2e9ce1",
+    "name": "PINCEL ANA PAULA 02",
+    "value": 39.9,
+    "cost": 20,
+    "code": "BA87",
+    "barcode": "",
+    "available_stock": -3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "ac03d289-80f0-4435-8f77-04cf662614c2",
+    "name": "PINCEL ANA PAULA 03",
+    "value": 39.9,
+    "cost": 20,
+    "code": "BA88",
+    "barcode": "",
+    "available_stock": -2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "dce9eaf4-609a-4dd0-b20b-c5cf32691fbf",
+    "name": "PINCEL ANA PAULA 15",
+    "value": 44.9,
+    "cost": 23,
+    "code": "BA89",
+    "barcode": "",
+    "available_stock": -3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "83f84c02-118f-4994-99cb-74455ac60abd",
+    "name": "PINCEL ANA PAULA 30",
+    "value": 49.9,
+    "cost": 25,
+    "code": "BA90",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "a7d650b2-f485-4a6c-bb33-82ca72952759",
+    "name": "Pincel S04",
+    "value": 36,
+    "cost": 20,
+    "code": "BA72",
+    "barcode": "",
+    "available_stock": 4,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "d0748977-ac09-42b5-9d8b-a584e20d2262",
+    "name": "PINCEL S06",
+    "value": 30.9,
+    "cost": 14,
+    "code": "BA47",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "5ec12fd0-96ac-4b70-bf61-719f6a6fbb2e",
+    "name": "PINCEL S08",
+    "value": 30.9,
+    "cost": 13.3,
+    "code": "BA48",
+    "barcode": "",
+    "available_stock": 6,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "341d17e8-7ed6-49bd-80b9-1b3ca50f9738",
+    "name": "PINCEL S10",
+    "value": 26.5,
+    "cost": 12.9,
+    "code": "BA49",
+    "barcode": "",
+    "available_stock": 6,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "f65a239c-ef59-40c2-a11f-60f35078b3e1",
+    "name": "PINCEL S109",
+    "value": 26.5,
+    "cost": 11.2,
+    "code": "BA52",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "c4a2a9ac-2860-4e85-bb2b-22a5031e9c14",
+    "name": "PINCEL S113",
+    "value": 26.5,
+    "cost": 13.3,
+    "code": "BA53",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "fa147e48-793f-45bf-88e1-98014aa67ff2",
+    "name": "PINCEL S115",
+    "value": 30.9,
+    "cost": 7,
+    "code": "BA54",
+    "barcode": "",
+    "available_stock": 11,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "6e2d0b70-e2f7-4ebc-975f-e943fdfddaf4",
+    "name": "PINCEL S12",
+    "value": 26.5,
+    "cost": 11.75,
+    "code": "BA50",
+    "barcode": "",
+    "available_stock": 10,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "fb8a775d-b71c-409f-bf5a-3238fe11f838",
+    "name": "PINCEL S127",
+    "value": 9.9,
+    "cost": 4.2,
+    "code": "BA55",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "31e712f5-3849-42f8-a8c9-1e0c5df1d2c3",
+    "name": "PINCEL S131",
+    "value": 30.9,
+    "cost": 10.15,
+    "code": "BA56",
+    "barcode": null,
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "00e13d6e-b64e-4cf9-bb2e-671bdc999edf",
+    "name": "PINCEL S14",
+    "value": 30.9,
+    "cost": 13.3,
+    "code": "BA51",
+    "barcode": "",
+    "available_stock": 4,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "3d2bcc98-20f8-4491-b5b1-776ecc5ce4f5",
+    "name": "Pincel S159",
+    "value": 18,
+    "cost": 10.2,
+    "code": "BA73",
+    "barcode": "",
+    "available_stock": 0,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "df178bde-d490-48c3-983d-8d22e08cd8f4",
+    "name": "Pincel S22",
+    "value": 27,
+    "cost": 15.2,
+    "code": "BA71",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "e45f3e6e-84d7-49ab-8053-637314d4110e",
+    "name": "PÓ BANANA",
+    "value": 45.9,
+    "cost": 27,
+    "code": "BA66",
+    "barcode": "",
+    "available_stock": -3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "859ff7ea-b2d1-481e-8bd6-81e88166983c",
+    "name": "PO BEGE",
+    "value": 45.9,
+    "cost": 27,
+    "code": "BA85",
+    "barcode": "",
+    "available_stock": 3,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ad19f125-d4c2-4856-b792-0901de45db23",
+      "name": "Outras"
+    }
+  },
+  {
+    "id": "b4bb2296-c18a-4db4-bcb5-e1508ed02f0a",
+    "name": "POOMADA BLOND",
+    "value": 49,
+    "cost": 28,
+    "code": "BA10",
+    "barcode": "",
+    "available_stock": -5,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "3ecb92ac-7a68-4466-a3e9-e0f2c6a57800",
+    "name": "POOMADA BRUNETTE",
+    "value": 49,
+    "cost": 28,
+    "code": "BA09",
+    "barcode": "",
+    "available_stock": 10,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "6f2997c7-c281-4862-905e-1bb4c2b2d637",
+    "name": "POOMADA CHOCOLATIER",
+    "value": 49,
+    "cost": 28,
+    "code": "BA08",
+    "barcode": "",
+    "available_stock": -14,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "7d1c84d3-6c36-47ad-9f27-88cd6d29aa98",
+    "name": "POOMADA GINGER",
+    "value": 49,
+    "cost": 28,
+    "code": "BA11",
+    "barcode": "",
+    "available_stock": 2,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "d35c7c7e-acfc-416b-a3bf-1b986f5f4f9d",
+    "name": "PÓ PARA CONTORNO (DARK)",
+    "value": 45.9,
+    "cost": 27,
+    "code": "BA65",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "60232554-b256-44e3-bde3-81edf480b0ac",
+      "name": "Mercadoria para Revenda"
+    }
+  },
+  {
+    "id": "d5e967c1-e0f1-41ba-94bf-68bb40d46020",
+    "name": "PÓ TRANSLUCIDO",
+    "value": 45.9,
+    "cost": 27,
+    "code": "BA67",
+    "barcode": "",
+    "available_stock": 1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "60232554-b256-44e3-bde3-81edf480b0ac",
+      "name": "Mercadoria para Revenda"
+    }
+  },
+  {
+    "id": "98878481-b8b6-4387-a87d-515bd139834f",
+    "name": "PO TRANSLUCIDO ROSADO",
+    "value": 52.9,
+    "cost": 29.94,
+    "code": "BA46",
+    "barcode": "",
+    "available_stock": -1,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "47155f9a-c708-402b-bea2-463dfce897e4",
+    "name": "REFLECTS GOLD AP228",
+    "value": 27,
+    "cost": 18,
+    "code": "BA21",
+    "barcode": "",
+    "available_stock": -10,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "7f7c5909-dffa-48d1-a051-8368786b9a52",
+    "name": "RIMEL BLONDIER",
+    "value": 49,
+    "cost": 28,
+    "code": "BA29",
+    "barcode": "",
+    "available_stock": -16,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "0fdae422-297e-48eb-9f7e-68ed946c1d97",
+    "name": "RIMEL BRONW",
+    "value": 49,
+    "cost": 28,
+    "code": "BA30",
+    "barcode": "",
+    "available_stock": -9,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "9ea3bb5e-804a-4fe0-bedb-4f0d9943e2d0",
+    "name": "RIMEL TAUPE",
+    "value": 49,
+    "cost": 28,
+    "code": "BA28",
+    "barcode": "",
+    "available_stock": -6,
+    "ncm_code": "33049990",
+    "cest_code": "2001500",
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+      "name": "Categoria padrão"
+    }
+  },
+  {
+    "id": "58125ccf-5b34-43a2-8dc5-63e12ed57788",
+    "name": "TERMINAL SUPER CLARO SUMUP - D200 GPRS WIFI",
+    "value": 0,
+    "cost": 238.8,
+    "code": "BA70",
+    "barcode": null,
+    "available_stock": 0,
+    "ncm_code": "84705019",
+    "cest_code": null,
+    "net_weight": null,
+    "gross_weight": null,
+    "category": {
+      "id": "52105670-ec26-4cbf-99bc-aa3b21212c01",
+      "name": "Material de Uso e Consumo"
+    }
+  }
+]

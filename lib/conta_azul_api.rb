@@ -2,6 +2,7 @@ require "conta_azul_api/configuration"
 require "conta_azul_api/authentication"
 require "conta_azul_api/request"
 require "conta_azul_api/version"
+require "conta_azul_api/product"
 
 module ContaAzulApi
   class Error < StandardError; end

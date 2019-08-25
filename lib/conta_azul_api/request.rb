@@ -37,7 +37,10 @@ module ContaAzulApi
       request.body = body
 
       response = http.request(request)
-      JSON.parse(response.read_body)
+
+      if response.code.start_with?('20')
+        JSON.parse(response.read_body)
+      end
     end
 
     def self.generate_base64_auth

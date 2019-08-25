@@ -1,0 +1,17 @@
+{
+  "id": "21579900-b3ae-4e59-b2c0-5cac5cff6fbd",
+  "name": "Batom Ester",
+  "value": 39.9,
+  "cost": 25,
+  "code": "BA79",
+  "barcode": "",
+  "available_stock": -5,
+  "ncm_code": "33041000",
+  "cest_code": "2000900",
+  "net_weight": null,
+  "gross_weight": null,
+  "category": {
+    "id": "ee58d110-c556-49ba-9f9d-5d8efcd05990",
+    "name": "Categoria padrão"
+  }
+}
