@@ -16,7 +16,8 @@ module ContaAzulApi
     end
 
     def refresh_access_token
-      query_vars = "grant_type=refresh_token&refresh_token=#{refresh_token}"
+      refresh_token_from_config = ContaAzulApi.configuration.refresh_token
+      query_vars = "grant_type=refresh_token&refresh_token=#{refresh_token || refresh_token_from_config}"
       new_access_tokens = ContaAzulApi::Request.post(endpoint: "oauth2/token?#{query_vars}")
 
       @access_token = new_access_tokens['access_token']
