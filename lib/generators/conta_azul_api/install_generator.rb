@@ -20,7 +20,7 @@ module ContaAzulApi
       def copy_migrations
         migration_template(
           'conta_azul_api_create_ca_auth_history.rb',
-          "#{migration_path}/conta_azul_api_create_ca_auth_history.rb",
+          "db/migrate/conta_azul_api_create_ca_auth_history.rb",
           migration_version: migration_version
         )
       end
@@ -31,6 +31,10 @@ module ContaAzulApi
         if rails5_and_up?
           "[#{Rails::VERSION::MAJOR}.#{Rails::VERSION::MINOR}]"
         end
+      end
+
+      def rails5_and_up?
+        Rails::VERSION::MAJOR >= 5
       end
     end
   end
