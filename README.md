@@ -20,6 +20,10 @@ Or install it yourself as:
 
     $ gem install conta_azul_api
 
+In your terminal, run the code below inside your project path to create the migration that will save tokens created every time that the previous one expires:
+
+    $ rails g conta_azul_api:install copy_migrations
+
 ## Usage
 
 TODO: Write usage instructions here
