@@ -19,13 +19,19 @@ module ContaAzulApi
 
       def copy_migrations
         migration_template(
-          'conta_azul_api_create_ca_auth_history.rb',
-          "db/migrate/conta_azul_api_create_ca_auth_history.rb",
+          'conta_azul_api_create_ca_auth_histories.rb',
+          'db/migrate/conta_azul_api_create_ca_auth_histories.rb',
           migration_version: migration_version
         )
+
+        invoke('active_record:model', ['CaAuthHistory'], migration: false) unless model_exists? && behavior == :invoke
       end
 
       private
+
+      def model_exists?
+        File.exist?(File.join(destination_root, 'app', 'models', 'ca_auth_history.rb'))
+      end
 
       def migration_version
         if rails5_and_up?
