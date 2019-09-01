@@ -3,7 +3,7 @@
 module ContaAzulApi
   class Authentication
     def initialize
-      @last_authentication = CaAuthHistory.last
+      @last_authentication = ::CaAuthHistory.last
     end
 
     def access_token
@@ -27,13 +27,24 @@ module ContaAzulApi
     def refresh_access_token
       refresh_token_from_config = ContaAzulApi.configuration.refresh_token
       query_vars = "grant_type=refresh_token&refresh_token=#{refresh_token || refresh_token_from_config}"
-      new_access_tokens = ContaAzulApi::Request.post(endpoint: "oauth2/token?#{query_vars}")
+      new_access_tokens = ContaAzulApi::Request.post(
+        endpoint: "oauth2/token?#{query_vars}",
+        authorization: "Basic #{client_credential}"
+      )
 
-      @last_authentication = CaAuthHistory.create!(
+      @last_authentication = ::CaAuthHistory.create!(
         access_token:  new_access_tokens['access_token'],
         refresh_token: new_access_tokens['refresh_token'],
         expires_at: Time.now + (new_access_tokens['expires_in'] - 60)
       )
+    end
+
+    def client_credential
+      @client_credential ||= begin
+        client_credential = '%s:%s' % [ContaAzulApi.configuration.client_id, ContaAzulApi.configuration.client_secret]
+
+        Base64.encode64(client_credential).gsub("\n", '')
+      end
     end
   end
 end

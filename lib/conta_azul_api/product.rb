@@ -9,14 +9,18 @@ module ContaAzulApi
     MAX_PRODUCTS_PER_PAGE = 200
 
     def self.find(product_id)
-      product = ContaAzulApi::Request.get(endpoint: "#{PRODUCT_ENDPOINT}/#{product_id}")
+      product = ContaAzulApi::Request.get(
+        endpoint: "#{PRODUCT_ENDPOINT}/#{product_id}", authorization: request_authorization
+      )
       raise NotFound if product.nil?
 
       OpenStruct.new(product)
     end
 
     def self.all
-      products = ContaAzulApi::Request.get(endpoint: "#{PRODUCT_ENDPOINT}?size=#{MAX_PRODUCTS_PER_PAGE}")
+      products = ContaAzulApi::Request.get(
+        endpoint: "#{PRODUCT_ENDPOINT}?size=#{MAX_PRODUCTS_PER_PAGE}", authorization: request_authorization
+      )
 
       products.map { |product| OpenStruct.new(product) }
     end
@@ -25,6 +29,12 @@ module ContaAzulApi
       products = all
 
       products.select { |product| product.name.include?(name) }
+    end
+
+    private
+
+    def self.request_authorization
+      "Bearer #{ContaAzulApi.authentication.access_token}"
     end
   end
 end

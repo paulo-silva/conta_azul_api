@@ -13,17 +13,17 @@ module ContaAzulApi
       get:  Net::HTTP::Get
     }
 
-    def self.get(endpoint:)
-      request(method: :get, endpoint: endpoint)
+    def self.get(endpoint:, authorization:)
+      request(method: :get, endpoint: endpoint, authorization: authorization)
     end
 
-    def self.post(endpoint:, body: nil)
-      request(method: :post, endpoint: endpoint, body: body)
+    def self.post(endpoint:, body: nil, authorization:)
+      request(method: :post, endpoint: endpoint, body: body, authorization: authorization)
     end
 
     private
 
-    def self.request(method:, endpoint:, body: nil)
+    def self.request(method:, endpoint:, body: nil, authorization:)
       url = URI(CONTA_AZUL_DOMAIN % endpoint)
 
       http = Net::HTTP.new(url.host, url.port)
@@ -32,7 +32,7 @@ module ContaAzulApi
 
       http_method_class = HTTP_METHODS_CLASS[method]
       request = http_method_class.new(url)
-      request['authorization'] = "Basic #{generate_base64_auth}"
+      request['authorization'] = authorization
       request.body = body
 
       response = http.request(request)
@@ -40,12 +40,6 @@ module ContaAzulApi
       if response.code.start_with?('20')
         JSON.parse(response.read_body)
       end
-    end
-
-    def self.generate_base64_auth
-      client_credential = '%s:%s' % [ContaAzulApi.configuration.client_id, ContaAzulApi.configuration.client_secret]
-
-      Base64.encode64(client_credential).gsub("\n", '')
     end
   end
 end
