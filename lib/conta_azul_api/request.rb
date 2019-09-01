@@ -4,6 +4,7 @@ require 'net/http'
 require 'net/https'
 require 'openssl'
 require 'uri'
+require 'active_support/gzip'
 
 module ContaAzulApi
   module Request
@@ -38,8 +39,16 @@ module ContaAzulApi
       response = http.request(request)
 
       if response.code.start_with?('20')
-        JSON.parse(response.read_body)
+        format_response_body(response.read_body)
       end
+    end
+
+    def self.format_response_body(response_body)
+      decompressed_data = ActiveSupport::Gzip.decompress(response_body)
+
+      JSON.parse(decompressed_data)
+    rescue Zlib::GzipFile::Error # not a gzip
+      JSON.parse(response_body)
     end
   end
 end
