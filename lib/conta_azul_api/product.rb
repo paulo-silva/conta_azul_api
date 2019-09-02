@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 require 'ostruct'
+require 'conta_azul_api/models'
 
 module ContaAzulApi
-  module Product
+  module Product < ::ContaAzulApi::Models
     class NotFound < StandardError; end
 
     PRODUCT_ENDPOINT = 'v1/products'
@@ -29,12 +30,6 @@ module ContaAzulApi
       products = all
 
       products.select { |product| product.name.include?(name) }
-    end
-
-    private
-
-    def self.request_authorization
-      "Bearer #{ContaAzulApi.authentication.access_token}"
     end
   end
 end
