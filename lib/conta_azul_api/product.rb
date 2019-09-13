@@ -3,7 +3,7 @@ require 'ostruct'
 require 'conta_azul_api/models'
 
 module ContaAzulApi
-  module Product < ::ContaAzulApi::Models
+  class Product < ::ContaAzulApi::Models
     class NotFound < StandardError; end
 
     PRODUCT_ENDPOINT = 'v1/products'

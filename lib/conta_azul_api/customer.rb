@@ -4,7 +4,7 @@ require 'ostruct'
 require 'conta_azul_api/models'
 
 module ContaAzulApi
-  module Customer < ::ContaAzulApi::Models
+  class Customer < ::ContaAzulApi::Models
     class NotFound < StandardError; end
     class NotCreated < StandardError; end
 
