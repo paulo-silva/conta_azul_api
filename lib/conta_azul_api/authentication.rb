@@ -7,9 +7,7 @@ module ContaAzulApi
     end
 
     def access_token
-      if authentication_expired?
-        refresh_access_token
-      end
+      refresh_access_token
 
       @last_authentication.access_token
     end
@@ -19,14 +17,23 @@ module ContaAzulApi
     end
 
     def authentication_expired?
-      return true if @last_authentication.nil? || (@last_authentication.expires_at < Time.now)
+      return true if @last_authentication.nil?
 
-      false
+      @last_authentication.expires_at.to_i < Time.now.to_i
     end
 
-    def refresh_access_token
-      refresh_token_from_config = ContaAzulApi.configuration.refresh_token
-      query_vars = "grant_type=refresh_token&refresh_token=#{refresh_token || refresh_token_from_config}"
+    def request_access_token(grant_type:, code:)
+      case grant_type
+      when :refresh_token
+        query_vars = "grant_type=refresh_token&refresh_token=#{code}"
+      when :authorization_code
+        redirect_uri = ContaAzulApi.configuration.redirect_uri
+
+        query_vars = "grant_type=authorization_code&redirect_uri=#{redirect_uri}&code=#{code}"
+      else
+        raise InvalidGrantType
+      end
+
       new_access_tokens = ContaAzulApi::Request.post(
         endpoint: "oauth2/token?#{query_vars}",
         authorization: "Basic #{client_credential}"
@@ -37,6 +44,14 @@ module ContaAzulApi
         refresh_token: new_access_tokens['refresh_token'],
         expires_at: Time.now + (new_access_tokens['expires_in'] - 60)
       )
+    end
+
+    def refresh_access_token
+      if @last_authentication.nil?
+        request_access_token(grant_type: :authorization_code, code: ContaAzulApi.configuration.auth_code)
+      elsif authentication_expired?
+        request_access_token(grant_type: :refresh_token, code: refresh_token)
+      end
     end
 
     def client_credential

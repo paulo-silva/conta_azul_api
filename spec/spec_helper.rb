@@ -18,6 +18,7 @@ RSpec.configure do |config|
     ContaAzulApi.configure do |config|
       config.client_id          = ENV.fetch('CA_CLIENT_ID')           { 'XXXXXXXXX'              }
       config.client_secret      = ENV.fetch('CA_CLIENT_SECRET')       { 'YYYYYYYYY'              }
+      config.auth_code          = ENV.fetch('CA_AUTHORIZATION_CODE')  { 'YYYYYYYYY'              }
       config.redirect_uri       = ENV.fetch('CA_REDIRECT_URI')        { 'https://myapp.com/auth' }
       config.scope              = ENV.fetch('CA_SCOPE')               { 'sales'                  }
       config.state              = ENV.fetch('CA_STATE')               { ''                       }
