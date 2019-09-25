@@ -1,4 +1,11 @@
 RSpec.describe ContaAzulApi::Product do
+  before do
+    stub_request(:post, %r{https://api.contaazul.com/oauth2/token}).
+      to_return(status: 200, body: File.read('spec/fixtures/refresh_oauth_token.json'))
+
+    stub_const('CaAuthHistory', FakeCaAuthHistory)
+  end
+
   describe '.find' do
     it 'returns a product when a valid ID is provided' do
       stub_request(:get, 'https://api.contaazul.com/v1/products/21579900-b3ae-4e59-b2c0-5cac5cff6fbd').

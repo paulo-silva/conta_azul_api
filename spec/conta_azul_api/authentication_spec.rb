@@ -2,6 +2,10 @@ require 'timecop'
 
 RSpec.describe ContaAzulApi::Authentication do
   describe '.authentication_expired?' do
+    before do
+      stub_const('CaAuthHistory', FakeCaAuthHistory)
+    end
+
     it 'returns positive when no access token is provided' do
       authentication = ContaAzulApi::Authentication.new
 
