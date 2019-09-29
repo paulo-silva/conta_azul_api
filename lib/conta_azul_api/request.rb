@@ -5,6 +5,7 @@ require 'net/https'
 require 'openssl'
 require 'uri'
 require 'active_support/gzip'
+require 'rails'
 
 module ContaAzulApi
   module Request
@@ -35,6 +36,8 @@ module ContaAzulApi
       request = http_method_class.new(url)
       request['authorization'] = authorization
       request.body = body
+
+      Rails.logger.info("Requesting #{method.to_s} #{url} with body: #{body.to_json}")
 
       response = http.request(request)
 
