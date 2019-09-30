@@ -1,4 +1,5 @@
 # ContaAzulApi
+[![Build Status](https://api.travis-ci.org/paulo-silva/conta_azul_api.svg?branch=master)](http://travis-ci.org/paulo/conta_azul_api.svg)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/conta_azul_api`. To experiment with that code, run `bin/console` for an interactive prompt.
 
