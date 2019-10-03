@@ -19,7 +19,7 @@ RSpec.describe ContaAzulApi::Authentication do
       authentication = ContaAzulApi::Authentication.new
       authentication.refresh_access_token
 
-      Timecop.freeze(Time.now + 7200) do
+      Timecop.freeze(Time.now + 2.hours) do
         expect(authentication.authentication_expired?).to be_truthy
       end
     end
