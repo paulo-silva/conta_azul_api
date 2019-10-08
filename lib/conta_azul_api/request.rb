@@ -11,8 +11,10 @@ module ContaAzulApi
   class Request
     CONTA_AZUL_DOMAIN = 'https://api.contaazul.com/%s'
     HTTP_METHODS_CLASS = {
-      post: Net::HTTP::Post,
-      get:  Net::HTTP::Get
+      post:   Net::HTTP::Post,
+      get:    Net::HTTP::Get,
+      delete: Net::HTTP::Delete,
+      put:    Net::HTTP::Put
     }
 
     def initialize(logger: Rails.logger)
@@ -25,6 +27,14 @@ module ContaAzulApi
 
     def post(endpoint:, body: nil, authorization:)
       request(method: :post, endpoint: endpoint, body: body, authorization: authorization)
+    end
+
+    def delete(endpoint:, authorization:)
+      request(method: :delete, endpoint: endpoint, authorization: authorization)
+    end
+
+    def put(endpoint:, authorization:)
+      request(method: :put, endpoint: endpoint, authorization: authorization)
     end
 
     private
@@ -50,14 +60,6 @@ module ContaAzulApi
 
       logger.info("Response body: ```\n#{response.read_body.to_s}\n```, Status: #{response.code}")
       ContaAzulApi::HttpResponse.new(response)
-    end
-
-    def format_response_body(response_body)
-      decompressed_data = ActiveSupport::Gzip.decompress(response_body)
-
-      JSON.parse(decompressed_data)
-    rescue Zlib::GzipFile::Error # not a gzip
-      JSON.parse(response_body)
     end
   end
 end
