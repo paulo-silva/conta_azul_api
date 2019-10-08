@@ -46,14 +46,10 @@ module ContaAzulApi
       request.body = body
 
       logger.info("Requesting #{method.to_s} #{url} with body: #{body}")
-
       response = http.request(request)
 
       logger.info("Response body: ```\n#{response.read_body.to_s}\n```, Status: #{response.code}")
-
-      if response.code.start_with?('20')
-        format_response_body(response.read_body)
-      end
+      ContaAzulApi::HttpResponse.new(response)
     end
 
     def format_response_body(response_body)
