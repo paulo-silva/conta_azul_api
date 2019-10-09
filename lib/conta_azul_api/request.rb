@@ -37,7 +37,11 @@ module ContaAzulApi
       request['authorization'] = authorization
       request.body = body
 
+      Rails.logger.info("Requesting #{method.to_s} #{url} with body: #{body}")
+
       response = http.request(request)
+
+      Rails.logger.info("Response body: ```\n#{response.read_body.to_s}\n```, Status: #{response.code}")
 
       if response.code.start_with?('20')
         format_response_body(response.read_body)
