@@ -3,18 +3,6 @@ require 'active_support/gzip'
 
 module ContaAzulApi
   class HttpResponse
-    HTTP_STATUS_CODE = {
-      '200': :ok,
-      '201': :created,
-      '400': :bad_request,
-      '401': :unauthorized,
-      '403': :forbidden,
-      '404': :not_found,
-      '422': :unprocessable_entity,
-      '500': :internal_server_error,
-      '503': :service_unavailabe
-    }
-
     def initialize(http_response)
       @raw_response = http_response
     end
@@ -32,6 +20,18 @@ module ContaAzulApi
     end
 
     private
+
+    HTTP_STATUS_CODE = {
+      '200': :ok,
+      '201': :created,
+      '400': :bad_request,
+      '401': :unauthorized,
+      '403': :forbidden,
+      '404': :not_found,
+      '422': :unprocessable_entity,
+      '500': :internal_server_error,
+      '503': :service_unavailabe
+    }
 
     attr_reader :raw_response
 
