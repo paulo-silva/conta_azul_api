@@ -35,6 +35,8 @@ module ContaAzulApi
       http_method_class = HTTP_METHODS_CLASS[method]
       request = http_method_class.new(url)
       request['authorization'] = authorization
+      request['Content-Type'] = 'application/json'
+      request['Accept'] = 'application/json'
       request.body = body
 
       Rails.logger.info("Requesting #{method.to_s} #{url} with body: #{body}")
