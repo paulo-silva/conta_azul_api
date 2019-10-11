@@ -10,7 +10,7 @@ module ContaAzulApi
     MAX_PRODUCTS_PER_PAGE = 200
 
     def self.find(product_id)
-      product = ContaAzulApi::Request.get(
+      product = ContaAzulApi::Request.new.get(
         endpoint: "#{PRODUCT_ENDPOINT}/#{product_id}", authorization: request_authorization
       )
       raise NotFound if product.nil?
@@ -19,7 +19,7 @@ module ContaAzulApi
     end
 
     def self.all
-      products = ContaAzulApi::Request.get(
+      products = ContaAzulApi::Request.new.get(
         endpoint: "#{PRODUCT_ENDPOINT}?size=#{MAX_PRODUCTS_PER_PAGE}", authorization: request_authorization
       )
 

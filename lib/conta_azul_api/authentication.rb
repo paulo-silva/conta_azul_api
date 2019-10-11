@@ -34,7 +34,7 @@ module ContaAzulApi
         raise InvalidGrantType
       end
 
-      new_access_tokens = ContaAzulApi::Request.post(
+      new_access_tokens = ContaAzulApi::Request.new.post(
         endpoint: "oauth2/token?#{query_vars}",
         authorization: "Basic #{client_credential}"
       )
