@@ -5,14 +5,15 @@ module ContaAzulApi
   class HttpResponse
     def initialize(http_response)
       @raw_response = http_response
+      @response_code = @raw_response.code.to_i
     end
 
     def status_code
-      HTTP_STATUS_CODE[raw_response.code.to_sym]
+      HTTP_STATUS_CODE[response_code]
     end
 
     def success?
-      raw_response.code.start_with?('20')
+      response_code.between?(200, 299)
     end
 
     def body
@@ -22,18 +23,18 @@ module ContaAzulApi
     private
 
     HTTP_STATUS_CODE = {
-      '200': :ok,
-      '201': :created,
-      '400': :bad_request,
-      '401': :unauthorized,
-      '403': :forbidden,
-      '404': :not_found,
-      '422': :unprocessable_entity,
-      '500': :internal_server_error,
-      '503': :service_unavailabe
+      200 => :ok,
+      201 => :created,
+      400 => :bad_request,
+      401 => :unauthorized,
+      403 => :forbidden,
+      404 => :not_found,
+      422 => :unprocessable_entity,
+      500 => :internal_server_error,
+      503 => :service_unavailabe
     }
 
-    attr_reader :raw_response
+    attr_reader :raw_response, :response_code
 
     def format_response_body
       decompressed_data = ActiveSupport::Gzip.decompress(raw_response.body)
