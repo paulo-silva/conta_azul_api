@@ -4,6 +4,9 @@ RSpec.describe ContaAzulApi::Authentication do
   describe '.authentication_expired?' do
     before do
       stub_const('CaAuthHistory', FakeCaAuthHistory)
+
+      logger = double(:logger, info: '')
+      allow(Rails).to receive(:logger).and_return(logger)
     end
 
     it 'returns positive when no access token is provided' do

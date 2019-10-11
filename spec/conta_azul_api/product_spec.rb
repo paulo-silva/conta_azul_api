@@ -4,6 +4,9 @@ RSpec.describe ContaAzulApi::Product do
       to_return(status: 200, body: File.read('spec/fixtures/refresh_oauth_token.json'))
 
     stub_const('CaAuthHistory', FakeCaAuthHistory)
+
+    logger = double(:logger, info: '')
+    allow(Rails).to receive(:logger).and_return(logger)
   end
 
   describe '.find' do
