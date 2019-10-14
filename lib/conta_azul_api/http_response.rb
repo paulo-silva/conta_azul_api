@@ -37,6 +37,8 @@ module ContaAzulApi
     attr_reader :raw_response, :response_code
 
     def format_response_body
+      return unless raw_response.body.present?
+
       decompressed_data = ActiveSupport::Gzip.decompress(raw_response.body)
 
       JSON.parse(decompressed_data)

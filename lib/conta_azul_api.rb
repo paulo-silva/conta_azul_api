@@ -5,6 +5,7 @@ require 'conta_azul_api/http_response'
 require 'conta_azul_api/version'
 require 'conta_azul_api/product'
 require 'conta_azul_api/customer'
+require 'conta_azul_api/service'
 
 module ContaAzulApi
   class Error < StandardError; end
