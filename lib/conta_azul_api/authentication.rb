@@ -37,7 +37,7 @@ module ContaAzulApi
       new_access_tokens = ContaAzulApi::Request.new.post(
         endpoint: "oauth2/token?#{query_vars}",
         authorization: "Basic #{client_credential}"
-      )
+      ).body
 
       @last_authentication = ::CaAuthHistory.create!(
         access_token:  new_access_tokens['access_token'],
