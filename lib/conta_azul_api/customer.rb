@@ -11,42 +11,42 @@ module ContaAzulApi
     CUSTOMER_ENDPOINT = 'v1/customers'
 
     def self.create(attributes = {})
-      customer = ContaAzulApi::Request.post(
+      customer_response = ContaAzulApi::Request.post(
         endpoint: "#{CUSTOMER_ENDPOINT}", body: attributes, authorization: request_authorization
       )
 
-      raise NotCreated if customer.nil?
+      raise NotCreated unless customer_response.success?
 
-      OpenStruct.new(customer)
+      OpenStruct.new(customer_response.body)
     end
 
     def self.find(customer_id)
-      customer = ContaAzulApi::Request.get(
+      customer_response = ContaAzulApi::Request.get(
         authorization: request_authorization,
         endpoint:      "#{CUSTOMER_ENDPOINT}/#{customer_id}"
       )
 
-      raise NotFound if customer.nil?
+      raise NotFound if customer_response.status_code == :not_found
 
-      OpenStruct.new(customer)
+      OpenStruct.new(customer_response.body)
     end
 
     def self.search(value, size: 10)
-      customers = ContaAzulApi::Request.get(
+      customer_response = ContaAzulApi::Request.get(
         authorization: request_authorization,
         endpoint:      "#{CUSTOMER_ENDPOINT}?search=#{value}&size=#{size}"
       )
 
-      customers.map { |customer| OpenStruct.new(customer) }
+      customer_response.body.map { |customer| OpenStruct.new(customer) }
     end
 
     def self.find_by_name(name)
-      customers = ContaAzulApi::Request.get(
+      customer_response = ContaAzulApi::Request.get(
         authorization: request_authorization,
         endpoint:      "#{CUSTOMER_ENDPOINT}?name=#{name}"
       )
 
-      customers.map { |customer| OpenStruct.new(customer) }
+      customer_response.body.map { |customer| OpenStruct.new(customer) }
     end
   end
 end
