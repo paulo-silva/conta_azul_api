@@ -11,7 +11,7 @@ module ContaAzulApi
     CUSTOMER_ENDPOINT = 'v1/customers'
 
     def self.create(attributes = {})
-      customer_response = ContaAzulApi::Request.post(
+      customer_response = ContaAzulApi::Request.new.post(
         endpoint: "#{CUSTOMER_ENDPOINT}", body: attributes, authorization: request_authorization
       )
 
@@ -21,7 +21,7 @@ module ContaAzulApi
     end
 
     def self.find(customer_id)
-      customer_response = ContaAzulApi::Request.get(
+      customer_response = ContaAzulApi::Request.new.get(
         authorization: request_authorization,
         endpoint:      "#{CUSTOMER_ENDPOINT}/#{customer_id}"
       )
@@ -32,7 +32,7 @@ module ContaAzulApi
     end
 
     def self.search(value, size: 10)
-      customer_response = ContaAzulApi::Request.get(
+      customer_response = ContaAzulApi::Request.new.get(
         authorization: request_authorization,
         endpoint:      "#{CUSTOMER_ENDPOINT}?search=#{value}&size=#{size}"
       )
@@ -41,7 +41,7 @@ module ContaAzulApi
     end
 
     def self.find_by_name(name)
-      customer_response = ContaAzulApi::Request.get(
+      customer_response = ContaAzulApi::Request.new.get(
         authorization: request_authorization,
         endpoint:      "#{CUSTOMER_ENDPOINT}?name=#{name}"
       )
