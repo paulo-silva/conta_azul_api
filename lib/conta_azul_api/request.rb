@@ -53,7 +53,7 @@ module ContaAzulApi
       request['authorization'] = authorization
       request['Content-Type'] = 'application/json'
       request['Accept'] = 'application/json'
-      request.body = body
+      request.body = body.is_a?(Hash) ? body.to_json : body
 
       logger.info("Requesting #{method.to_s} #{url} with body: #{body}")
       response = http.request(request)
