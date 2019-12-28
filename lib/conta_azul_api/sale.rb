@@ -21,6 +21,16 @@ module ContaAzulApi
       OpenStruct.new(sale_response.body)
     end
 
+    def self.list_items(id)
+      items_response = ContaAzulApi::Request.new.get(
+        endpoint: "#{SALES_ENDPOINT}/#{id}/items", authorization: request_authorization
+      )
+
+      raise NotFound unless items_response.success?
+
+      items_response.body.map { |item| OpenStruct.new(item) }
+    end
+
     def self.update(id:, attributes: {})
       sale_response = ContaAzulApi::Request.new.put(
         endpoint: "#{SALES_ENDPOINT}/#{id}", body: attributes, authorization: request_authorization

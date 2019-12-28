@@ -31,6 +31,28 @@ RSpec.describe ContaAzulApi::Sale do
     end
   end
 
+  describe 'list_items' do
+    it 'returns items from a sale' do
+      stub_request(:get, 'https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587/items').
+        to_return(status: 200, body: File.read('spec/fixtures/sales_endpoints/list_items.json'))
+
+      items = ContaAzulApi::Sale.list_items('c7288c09-829d-48b9-aee2-4f744e380587')
+
+      expect(items.size).to eq(1)
+      expect(items.first['description']).to eq('Game Atari ET')
+      expect(items.first['value']).to eq(0)
+    end
+
+    it 'raises an error when sale is not found' do
+      stub_request(:get, 'https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587/items').
+        to_return(status: 404, body: File.read('spec/fixtures/sales_endpoints/list_items.json'))
+
+      expect {
+        ContaAzulApi::Sale.list_items('c7288c09-829d-48b9-aee2-4f744e380587')
+      }.to raise_exception(ContaAzulApi::Sale::NotFound)
+    end
+  end
+
   describe '.create' do
     it 'creates a sale when valid data is provided' do
       sales_params = {
