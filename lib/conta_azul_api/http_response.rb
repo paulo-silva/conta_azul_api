@@ -25,6 +25,7 @@ module ContaAzulApi
     HTTP_STATUS_CODE = {
       200 => :ok,
       201 => :created,
+      204 => :deleted,
       400 => :bad_request,
       401 => :unauthorized,
       403 => :forbidden,

@@ -5,8 +5,31 @@ require 'conta_azul_api/models'
 module ContaAzulApi
   class Sale < ::ContaAzulApi::Models
     class NotCreated < StandardError; end
+    class NotDeleted < StandardError; end
+    class NotFound < StandardError; end
+    class NotUpdated < StandardError; end
 
     SALES_ENDPOINT = 'v1/sales'
+
+    def self.find(id)
+      sale_response = ContaAzulApi::Request.new.get(
+        endpoint: "#{SALES_ENDPOINT}/#{id}", authorization: request_authorization
+      )
+
+      raise NotFound unless sale_response.success?
+
+      OpenStruct.new(sale_response.body)
+    end
+
+    def self.update(id:, attributes = {})
+      sale_response = ContaAzulApi::Request.new.put(
+        endpoint: "#{SALES_ENDPOINT}/#{id}", body: attributes, authorization: request_authorization
+      )
+
+      raise NotUpdated unless sale_response.success?
+
+      OpenStruct.new(sale_response)
+    end
 
     def self.create(attributes = {})
       sale_response = ContaAzulApi::Request.new.post(
@@ -16,6 +39,22 @@ module ContaAzulApi
       raise NotCreated unless sale_response.success?
 
       OpenStruct.new(sale_response.body)
+    end
+
+    def self.delete(id:)
+      sale_response = ContaAzulApi::Request.new.delete(
+        endpoint: "#{SALES_ENDPOINT}/#{id}", authorization: request_authorization
+      )
+
+      sale_response.status_code == :deleted
+    end
+
+    def self.delete!(id:)
+      if delete(id: id)
+        true
+      else
+        raise NotDeleted
+      end
     end
   end
 end

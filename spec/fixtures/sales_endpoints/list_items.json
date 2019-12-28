@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Game Atari ET",
+    "quantity": 800,
+    "item": {
+      "id": "c7288c09-829d-48b9-aee2-4f744e380587",
+      "name": "Game Atari ET",
+      "value": 100,
+      "cost": 80
+    },
+    "item_type": "PRODUCT",
+    "value": 0
+  }
+]

@@ -9,6 +9,28 @@ RSpec.describe ContaAzulApi::Sale do
     allow(Rails).to receive(:logger).and_return(logger)
   end
 
+  describe '.find' do
+    it 'returns a sale based on provided id' do
+      stub_request(:get, "https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587").
+        to_return(status: 200, body: File.read('spec/fixtures/sales_endpoints/find_by_id.json'))
+
+      sale = ContaAzulApi::Sale.find('c7288c09-829d-48b9-aee2-4f744e380587')
+
+      expect(sale.id).to eq('c7288c09-829d-48b9-aee2-4f744e380587')
+      expect(sale.number).to eq(12)
+      expect(sale.total).to eq(50)
+    end
+
+    it 'raises an error when sale is not found' do
+      stub_request(:get, "https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587").
+        to_return(status: 404, body: 'Sale not found with the specified id')
+
+      expect {
+        ContaAzulApi::Sale.find('c7288c09-829d-48b9-aee2-4f744e380587')
+      }.to raise_exception(ContaAzulApi::Sale::NotFound)
+    end
+  end
+
   describe '.create' do
     it 'creates a sale when valid data is provided' do
       sales_params = {
@@ -47,6 +69,47 @@ RSpec.describe ContaAzulApi::Sale do
       expect {
         ContaAzulApi::Sale.create({}.as_json)
       }.to raise_exception(ContaAzulApi::Sale::NotCreated)
+    end
+  end
+
+  describe '.delete' do
+    it 'removes a sale based on provided id' do
+      stub_request(:delete, "https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587").
+        to_return(status: 204, body: 'Sale deleted')
+
+      sale_removed = ContaAzulApi::Sale.delete(id: 'c7288c09-829d-48b9-aee2-4f744e380587')
+
+      expect(sale_removed).to be_truthy
+    end
+
+    it 'does not remove a sale when they are not found' do
+      stub_request(:delete, "https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587").
+        to_return(status: 404, body: 'Sale not found with specified id')
+
+      sale_removed = ContaAzulApi::Sale.delete(id: 'c7288c09-829d-48b9-aee2-4f744e380587')
+
+      expect(sale_removed).to be_falsey
+    end
+  end
+
+  describe '.delete!' do
+    it 'removes a sale based on provided id' do
+      stub_request(:delete, "https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587").
+        to_return(status: 204, body: 'Sale deleted')
+
+      sale_removed = ContaAzulApi::Sale.delete!(id: 'c7288c09-829d-48b9-aee2-4f744e380587')
+
+      expect(sale_removed).to be_truthy
+    end
+
+    it 'raises an error when sale is not found' do
+      stub_request(:delete, "https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587").
+        to_return(status: 404, body: 'Sale not found with specified id')
+
+
+      expect {
+        ContaAzulApi::Sale.delete!(id: 'c7288c09-829d-48b9-aee2-4f744e380587')
+      }.to raise_exception(ContaAzulApi::Sale::NotDeleted)
     end
   end
 end
