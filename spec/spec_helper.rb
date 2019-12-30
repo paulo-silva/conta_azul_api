@@ -1,10 +1,8 @@
 require 'bundler/setup'
 require 'conta_azul_api'
 require 'webmock/rspec'
-require 'fake_ca_auth_history'
 
 RSpec.configure do |config|
-  config.include FakeCaAuthHistory
   config.example_status_persistence_file_path = '.rspec_status'
 
   # Disable RSpec exposing methods globally on `Module` and `main`

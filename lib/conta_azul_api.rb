@@ -7,6 +7,8 @@ require 'conta_azul_api/product'
 require 'conta_azul_api/customer'
 require 'conta_azul_api/service'
 require 'conta_azul_api/sale'
+require 'conta_azul_api/fake_ca_auth_history'
+require 'conta_azul_api/helpers'
 
 module ContaAzulApi
   class Error < StandardError; end

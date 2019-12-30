@@ -16,8 +16,7 @@ RSpec.describe ContaAzulApi::Authentication do
     end
 
     it 'returns positive when access token is expired' do
-      stub_request(:post, %r{https://api.contaazul.com/oauth2/token}).
-        to_return(status: 200, body: File.read('spec/fixtures/refresh_oauth_token.json'), headers: {})
+      ContaAzulApi::Helpers.stub_refresh_token
 
       authentication = ContaAzulApi::Authentication.new
       authentication.refresh_access_token
@@ -28,8 +27,7 @@ RSpec.describe ContaAzulApi::Authentication do
     end
 
     it 'returns negative when access token is up to date' do
-      stub_request(:post, %r{https://api.contaazul.com/oauth2/token}).
-        to_return(status: 200, body: File.read('spec/fixtures/refresh_oauth_token.json'), headers: {})
+      ContaAzulApi::Helpers.stub_refresh_token
 
       authentication = ContaAzulApi::Authentication.new
       authentication.refresh_access_token
