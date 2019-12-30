@@ -1,3 +1,5 @@
+require 'active_support/gzip'
+
 RSpec.describe ContaAzulApi::HttpResponse do
   let(:product_payload) { File.read('spec/fixtures/products_endpoints/find_by_id.json') }
 
@@ -69,6 +71,19 @@ RSpec.describe ContaAzulApi::HttpResponse do
     it 'returns a hash format body' do
       stub_request(:get, 'https://api.contaazul.com/v1/products/c7288c09-829d-48b9-aee2-4f744e380587').
         to_return(status: 200, body: product_payload, headers: {})
+
+      response = ContaAzulApi::Request.new.get(
+        endpoint: 'v1/products/c7288c09-829d-48b9-aee2-4f744e380587',
+        authorization: 'fake_auth'
+      )
+
+      expect(response.body).to be_a Hash
+      expect(response.body).to eq(JSON.parse(product_payload))
+    end
+
+    it 'returns a hash format when GZip is provided' do
+      stub_request(:get, 'https://api.contaazul.com/v1/products/c7288c09-829d-48b9-aee2-4f744e380587').
+        to_return(status: 200, body: ActiveSupport::Gzip.compress(product_payload), headers: {})
 
       response = ContaAzulApi::Request.new.get(
         endpoint: 'v1/products/c7288c09-829d-48b9-aee2-4f744e380587',

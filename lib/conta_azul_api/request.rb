@@ -58,8 +58,7 @@ module ContaAzulApi
       logger.info("Requesting #{method.to_s} #{url} with body: #{body}")
       response = http.request(request)
 
-      logger.info("Response body: ```\n#{response.read_body.to_s}\n```, Status: #{response.code}")
-      ContaAzulApi::HttpResponse.new(response)
+      ContaAzulApi::HttpResponse.new(response, logger: logger)
     end
   end
 end
