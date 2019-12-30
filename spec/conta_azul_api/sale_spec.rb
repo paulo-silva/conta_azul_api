@@ -74,9 +74,10 @@ RSpec.describe ContaAzulApi::Sale do
         notes: 'PP2'
       }
 
-      stub_request(:post, 'https://api.contaazul.com/v1/sales').
-        with(body: sales_params).
-        to_return(status: 201, body: File.read('spec/fixtures/sales_endpoints/create.json'), headers: {})
+      ContaAzulApi::Helpers.stub_create_sale(
+        payload: sales_params,
+        body: JSON.parse(File.read('spec/fixtures/sales_endpoints/create.json'))
+      )
 
       new_sale = ContaAzulApi::Sale.create(sales_params.as_json)
 
@@ -84,9 +85,7 @@ RSpec.describe ContaAzulApi::Sale do
     end
 
     it 'raises error when sale is not created' do
-      stub_request(:post, 'https://api.contaazul.com/v1/sales').
-        with(body: {}).
-        to_return(status: 422, body: nil, headers: {})
+      ContaAzulApi::Helpers.stub_create_sale(status: 422)
 
       expect {
         ContaAzulApi::Sale.create({}.as_json)

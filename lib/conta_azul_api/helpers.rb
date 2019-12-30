@@ -21,5 +21,11 @@ module ContaAzulApi
       WebMock.stub_request(:get, %r{https://api.contaazul.com/v1/products})
         .to_return(status: status, body: products.to_json)
     end
+
+    def self.stub_create_sale(status: 201, payload: {}, body: {})
+      WebMock.stub_request(:post, 'https://api.contaazul.com/v1/sales').
+        with(body: payload).
+        to_return(status: status, body: body.to_json, headers: {})
+    end
   end
 end
