@@ -7,7 +7,7 @@ module ContaAzulApi
     class NotFound < StandardError; end
 
     PRODUCT_ENDPOINT = 'v1/products'
-    MAX_PRODUCTS_PER_PAGE = 200
+    MAX_PRODUCTS_PER_PAGE = 1000
 
     def self.find(product_id)
       product_response = ContaAzulApi::Request.new.get(
