@@ -21,6 +21,25 @@ module ContaAzulApi
       OpenStruct.new(sale_response.body)
     end
 
+    VALID_FILTER_OPTIONS = [
+      :emission_start, :emission_end, :status, :customer_id, :page, :size
+    ]
+    def self.filter_by(**options)
+      query_string =
+        options
+          .filter { |k, v| k.in? VALID_FILTER_OPTIONS }
+          .map { |k, v| "#{k}=#{v}" }
+          .join("&")
+
+      response = ContaAzulApi::Request.new.get(
+        endpoint: "#{SALES_ENDPOINT}?#{query_string}", authorization: request_authorization
+      )
+
+      raise NotFound unless response.success?
+
+      response.body.map { |item| OpenStruct.new(item) }
+    end
+
     def self.list_items(id)
       items_response = ContaAzulApi::Request.new.get(
         endpoint: "#{SALES_ENDPOINT}/#{id}/items", authorization: request_authorization

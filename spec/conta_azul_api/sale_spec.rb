@@ -31,6 +31,31 @@ RSpec.describe ContaAzulApi::Sale do
     end
   end
 
+  describe '.filter_by' do
+    it 'returns sales based on provided filters' do
+      stub_request(:get, "https://api.contaazul.com/v1/sales?emission_start=2020-10-13&size=1").
+        to_return(status: 200, body: File.read('spec/fixtures/sales_endpoints/filter_by.json'))
+
+      sales = ContaAzulApi::Sale.filter_by(emission_start: '2020-10-13', size: 1)
+      expect(sales).to be_an(Array)
+      expect(sales.length).to eq 1
+
+      sale = sales.first
+      expect(sale.id).to eq('c7288c09-829d-48b9-aee2-4f744e380587')
+      expect(sale.number).to eq(12)
+      expect(sale.total).to eq(50)
+    end
+
+    it 'raises an error when sale is not found' do
+      stub_request(:get, "https://api.contaazul.com/v1/sales?emission_start=2020-10-13&size=1").
+        to_return(status: 404, body: 'Sales not found with the specified filters')
+
+      expect {
+        ContaAzulApi::Sale.filter_by(emission_start: '2020-10-13', size: 1)
+      }.to raise_exception(ContaAzulApi::Sale::NotFound)
+    end
+  end
+
   describe 'list_items' do
     it 'returns items from a sale' do
       stub_request(:get, 'https://api.contaazul.com/v1/sales/c7288c09-829d-48b9-aee2-4f744e380587/items').
