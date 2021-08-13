@@ -42,7 +42,8 @@ module ContaAzulApi
       @last_authentication = ::CaAuthHistory.create!(
         access_token:  new_access_tokens['access_token'],
         refresh_token: new_access_tokens['refresh_token'],
-        expires_at: Time.now + (new_access_tokens['expires_in'] - 60)
+      #expires_at: Time.now + (new_access_tokens['expires_in'] - 60)
+        expires_at: Time.now + 2.years
       )
     end
 
